@@ -6,6 +6,12 @@ main.Spage {
   grid-template-rows: 10% 10% auto 10% auto 10% auto 10% auto;
 }
 
+main.PLpage {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
 h1 {
   grid-row: 1 / 2;
   font-family: "Manrope", sans-serif;
@@ -104,8 +110,18 @@ article.mdescr {
   padding: 2rem;
 }
 
+.PL {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.shopAll {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
 @media only screen and (max-width: 958px) {
-  main.Spage {
+  main.Spage main.PLpage {
     display: flex;
     flex-flow: column;
   }
