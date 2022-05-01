@@ -6,7 +6,26 @@
   flex-direction: row;
 }
 
+.headernewin,
+.headershop,
+.headerabout,
+.headersilfenplay,
+.headerss22{
+padding: 20px;
+}
+
+.headerlogo{
+padding-top: 30px;
+padding-left: 350px;
+}
+
+.headericons{
+padding-left: 480px;
+padding-top: 20px;
+}
+
 .navbar{
+padding-top: 25px;
 display: flex;
 flex-direction: row;
 }
@@ -30,6 +49,12 @@ h2 {
   font-size: 2.5rem;
 }
 
+a{
+text-decoration: none;
+color: black;
+}
+
+a,
 p {
   font-family: "Manrope", sans-serif;
 }
@@ -113,6 +138,54 @@ article.mdescr {
   grid-row: 9/10;
   grid-column: 1/3;
   padding: 2rem;
+}
+
+.footerh2{
+font-size: medium;
+}
+
+footer{
+  background-color: #85b4d7;
+  display: grid;
+  grid-template-columns: 40% 20% 20% 20%;
+  grid-template-rows: 90% 10%;
+  grid-gap: 10px;
+  padding-bottom: 80px;
+}
+
+.footersuscribe{
+grid-column: 1/2;
+grid-row: 1/2;
+}
+
+.footerallrights{
+grid-column: 1/3;
+grid-row: 2/3;
+}
+
+.footercontacts{
+grid-column: 2/3;
+grid-row: 1/2;
+}
+
+.footersilfenwarehouse{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.footerhelp{
+grid-column: 4/5;
+grid-row: 1/2;
+}
+
+li{
+list-style-type: none;
+
+}
+
+.footerconnect{
+grid-column: 4/5;
+grid-row: 2/3;
 }
 
 @media only screen and (max-width: 958px) {
