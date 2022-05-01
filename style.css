@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
-main {
+main.Spage {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 10% auto 10% auto 10% auto 10% auto;
