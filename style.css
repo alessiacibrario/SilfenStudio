@@ -12,6 +12,11 @@ main.PLpage {
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
+main.Ppage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 h1 {
   grid-row: 1 / 2;
   font-family: "Manrope", sans-serif;
@@ -120,8 +125,20 @@ article.mdescr {
   grid-row: 1/2;
 }
 
+.Pimg {
+  grid-column: 1/2;
+}
+
+article.Pdescr {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 958px) {
-  main.Spage main.PLpage {
+  main.Spage,
+  main.PLpage,
+  main.Ppage {
     display: flex;
     flex-flow: column;
   }
