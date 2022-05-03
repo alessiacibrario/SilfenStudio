@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
-
-.headercategories{
+.headercategories {
   display: flex;
   flex-direction: row;
 }
@@ -10,24 +9,24 @@
 .headershop,
 .headerabout,
 .headersilfenplay,
-.headerss22{
-padding: 20px;
+.headerss22 {
+  padding: 20px;
 }
 
-.headerlogo{
-padding-top: 30px;
-padding-left: 350px;
+.headerlogo {
+  padding-top: 30px;
+  padding-left: 350px;
 }
 
-.headericons{
-padding-left: 480px;
-padding-top: 20px;
+.headericons {
+  padding-left: 480px;
+  padding-top: 20px;
 }
 
-.navbar{
-padding-top: 25px;
-display: flex;
-flex-direction: row;
+.navbar {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
 }
 
 main.Spage {
@@ -40,6 +39,13 @@ main.PLpage {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+main.Ppage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 5rem;
+  grid-gap: 3rem;
 }
 
 h1 {
@@ -55,9 +61,14 @@ h2 {
   font-size: 2.5rem;
 }
 
-a{
-text-decoration: none;
-color: black;
+h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 a,
@@ -155,11 +166,29 @@ article.mdescr {
   grid-row: 1/2;
 }
 
-.footerh2{
-font-size: medium;
+.Pimg {
+  grid-column: 1/2;
 }
 
-footer{
+article.Pdescr {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.bagName,
+.bagPrice,
+.bagInfo,
+.bagColor,
+button {
+  padding: 1rem;
+}
+
+.footerh2 {
+  font-size: medium;
+}
+
+footer {
   background-color: #85b4d7;
   display: grid;
   grid-template-columns: 40% 20% 20% 20%;
@@ -168,43 +197,44 @@ footer{
   padding-bottom: 80px;
 }
 
-.footersuscribe{
-grid-column: 1/2;
-grid-row: 1/2;
+.footersuscribe {
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
-.footerallrights{
-grid-column: 1/3;
-grid-row: 2/3;
+.footerallrights {
+  grid-column: 1/3;
+  grid-row: 2/3;
 }
 
-.footercontacts{
-grid-column: 2/3;
-grid-row: 1/2;
+.footercontacts {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
-.footersilfenwarehouse{
+.footersilfenwarehouse {
   grid-column: 3/4;
   grid-row: 1/2;
 }
 
-.footerhelp{
-grid-column: 4/5;
-grid-row: 1/2;
+.footerhelp {
+  grid-column: 4/5;
+  grid-row: 1/2;
 }
 
-li{
-list-style-type: none;
-
+li {
+  list-style-type: none;
 }
 
-.footerconnect{
-grid-column: 4/5;
-grid-row: 2/3;
+.footerconnect {
+  grid-column: 4/5;
+  grid-row: 2/3;
 }
 
 @media only screen and (max-width: 958px) {
-  main.Spage main.PLpage {
+  main.Spage,
+  main.PLpage,
+  main.Ppage {
     display: flex;
     flex-flow: column;
   }
