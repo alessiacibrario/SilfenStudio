@@ -16,11 +16,11 @@ padding: 20px;
 
 .headerlogo{
 padding-top: 30px;
-padding-left: 350px;
+padding-left: 18rem;
 }
 
 .headericons{
-padding-left: 480px;
+padding-left: 40rem;
 padding-top: 20px;
 }
 
@@ -169,8 +169,8 @@ grid-row: 1/2;
 }
 
 .footersilfenwarehouse{
-  grid-column: 3/4;
-  grid-row: 1/2;
+grid-column: 3/4;
+grid-row: 1/2;
 }
 
 .footerhelp{
@@ -178,15 +178,22 @@ grid-column: 4/5;
 grid-row: 1/2;
 }
 
-li{
-list-style-type: none;
-
-}
-
 .footerconnect{
 grid-column: 4/5;
 grid-row: 2/3;
 }
+
+li{
+  list-style-type: none;
+  }
+  
+  .inputemail{
+  background-color: rgb(224, 223, 223);
+  }
+  
+  .signupbutton{
+  background-color: #7bafd4;
+  }
 
 @media only screen and (max-width: 958px) {
   main {
