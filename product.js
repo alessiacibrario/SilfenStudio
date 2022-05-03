@@ -15,13 +15,13 @@ fetch("http://marinedekoninck.com/silfen/wordpress-2/wp-json/wp/v2/posts")
   .then((res) => res.json())
   .then((data) => showBag(data));
 
+showBag(bag);
+
 //populate the page
-function showBag(bag) {
+function showBag(data) {
   console.log(bag);
-  document.querySelector(".bagName").textContent = bag.title;
-  document.querySelector(".bagInfo").textContent = bag.rendered;
+  document.querySelector(".bagName").textContent = "${bag.title}";
+  document.querySelector(".bagInfo").textContent = "${bag.excerpt}";
   document.querySelector(".bagPrice").textContent = "KK ${bag.price}";
   document.querySelector(".bagImg img").src = bag.link;
 }
-
-showBag(bag);
