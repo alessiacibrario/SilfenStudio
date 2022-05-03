@@ -1,24 +1,23 @@
-const urlParams = new URLSearchParams(window.location.search)
-const id = urlParams.get("_id")
-const url = "https://silfenstudio.com/wp-json/wc-analytics/products");
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("_id");
+const url = "http://marinedekoninck.com/silfen/wordpress-2/";
 
 fetch(url, options)
-.then((res) => res. json())
-.then ( (data) => showBag (data));
+  .then((res) => res.json())
+  .then((data) => showBag(data));
+
+const options = {
+  headers: {
+    "x-apikey": "",
+  },
+};
 
 //populate the page
-const options = {
-    method: 'POST',
-    body: JSON.stringify(params)  
-};
-
-
-const params = {
-     function showBag(bag) {
-     console.log(bag);
-     document.querySelector(".bagName").textContent = bag.name;
-     document.querySelector(".bagPrice").textContent = 'KK ${bag.price}';
-     document.querySelector(".bagImg img").src = bag.img;
-     }
-};
-
+function showBag(bag) {
+  function showBag(bag) {
+    console.log(bag);
+    document.querySelector(".bagName").textContent = bag.name;
+    document.querySelector(".bagPrice").textContent = "KK ${bag.price}";
+    document.querySelector(".bagImg img").src = bag.img;
+  }
+}
